@@ -13,25 +13,15 @@ import java.io.Serializable;
  */
 public class PostRequest implements Serializable {
     
-    private Integer id_registrasi;
     private String nama_penerima;
     private String alamat;
 
     public PostRequest() {
     }
 
-    public PostRequest(Integer id_registrasi, String nama_penerima, String alamat) {
-        this.id_registrasi = id_registrasi;
+    public PostRequest(String nama_penerima, String alamat) {
         this.nama_penerima = nama_penerima;
         this.alamat = alamat;
-    }
-
-    public Integer getId_registrasi() {
-        return id_registrasi;
-    }
-
-    public void setId_registrasi(Integer id_registrasi) {
-        this.id_registrasi = id_registrasi;
     }
 
     public String getNama_penerima() {
